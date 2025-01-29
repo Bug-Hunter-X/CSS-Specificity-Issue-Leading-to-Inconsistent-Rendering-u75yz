@@ -1,0 +1,16 @@
+To resolve this issue and ensure consistent rendering across browsers, use more explicit selectors or adjust the CSS structure. For example:
+
+```css
+div {
+  p {
+    color: blue; /* More explicit selector, avoids ambiguity */
+  }
+}
+p {
+  color: red;
+}
+```
+
+Alternatively, if you intend for the paragraphs within divs to always be blue, simply remove the more general `p` rule and leave only the `div p` rule. 
+
+This ensures that the styling is consistent and predictable, regardless of the browser used.
